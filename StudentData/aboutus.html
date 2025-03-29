@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>School of Computer Engineering | KIIT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 30px;
+            text-align: justify;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    height: 200px; /* Set a fixed height */
+    object-fit: fill; /* Ensures the image fills the box while maintaining aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+            color: #003366;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 20px;
+    color: #ccc; /* Ensure icons are visible */
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.copyright {
+    flex: 1;
+    text-align: right;
+}
+
+.links {
+    flex: 1;
+    text-align: left;
+}
+
+.social-icons {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright,
+    .links,
+    .social-icons {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        School of Computer Engineering | KIIT
+    </div>
+
+    <div class="container">
+        <img src="aboutkiit.png" alt="KIIT Campus">
+        <div class="content">
+            <p>KIIT is a prestigious educational institution offering world-class academic programs. With a campus spread over 36 square kilometers, KIIT is home to over 40,000 students, including 2,000 international students from 65+ countries.</p>
+        </div>
+    </div>
+
+    <div class="section-title">Campus Infrastructure</div>
+    <div class="container">
+        <div class="content">
+            <p>KIIT boasts state-of-the-art infrastructure, including a super-specialty hospital (KIMS), a multi-story central library, modern auditoriums, 18 sports complexes, and international-standard stadiums.</p>
+            <div class="gallery">
+                <img src="library.jpg" alt="KIIT Library">
+                <img src="auditorium.jpg" alt="KIIT Auditorium">
+                <img src="sports_complex.jpg" alt="KIIT Sports Complex">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">Research & Innovation</div>
+    <div class="container">
+        <div class="content">
+            <p>KIIT is dedicated to fostering research and innovation. It houses numerous research centers focusing on AI, Robotics, Biotechnology, and more. The university encourages students and faculty to collaborate on groundbreaking projects.</p>
+        </div>
+    </div>
+
+    <div class="section-title">Student Life</div>
+    <div class="container">
+        <div class="content">
+            <p>KIIT provides a vibrant student life with cultural events, technical fests, sports tournaments, and numerous clubs. Students from diverse backgrounds come together to create an engaging and dynamic community.</p>
+            <div class="gallery">
+                <img src="fest.jpg" alt="KIIT Cultural Fest">
+                <img src="students.jpg" alt="KIIT Students">
+                <img src="hostel.jpg" alt="KIIT Hostel">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="links">
+            <a href="https://kiit.ac.in/brochure/" target="_blank">Brochure</a> |
+            <a href="https://kiit.ac.in/privacy-policy/" target="_blank">Privacy Policy</a> |
+            <a href="https://kiit.ac.in/privacy-policy/" target="_blank">Terms & Conditions</a>
+
+        </div>
+    
+        <div class="social-icons">
+            <a href="https://www.facebook.com/KIITUniversity" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/school/kiituniversity/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/KIITUniversity/#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC2x7DxsTyZj7XBa3hlLVPCQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/KIITUniversity?mx=2" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    
+        <div class="copyright">
+            © Copyright – All Rights Reserved <a href="https://kiit.ac.in" target="_blank">kiit.ac.in</a>
+        </div>
+    </footer>
+   
+
+</body>
+</html>

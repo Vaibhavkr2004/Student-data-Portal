@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .left {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .right input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        .right input:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+        }
+
+        .center button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .center button:hover {
+            background-color: #45a049;
+        }
+
+        .center button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .center button[type="reset"]:hover {
+            background-color: #e53935;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Admin Login</h2>
+    <form action="admin_pass.php" method="get">
+        <table>
+            <tr>
+                <td class="left">User Name:</td>
+                <td class="right"><input type="text" name="username" id="Name" size="25" maxlength="35" placeholder="Enter Username" required /></td>
+            </tr>
+            <tr>
+                <td class="left">Password:</td>
+                <td class="right"><input type="password" name="password" id="password" size="25" maxlength="35" placeholder="Enter Password" required /></td>
+            </tr>
+            <tr>
+                <td class="center" colspan="2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

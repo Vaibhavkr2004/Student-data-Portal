@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-collapse: separate;
+            width: 400px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .left {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .right input {
+            padding: 8px;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .right input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+        }
+
+        .center button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .center button:hover {
+            background-color: #45a049;
+        }
+
+        .center button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .center button[type="reset"]:hover {
+            background-color: #e53935;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<form action="display.php" method="get">
+    <table>
+        <tr>
+            <td class="left">Name:</td>
+            <td class="right"><input type="text" id="Name" name="name" size="25" maxlength="35" placeholder="Enter your name" required /></td>
+        </tr>
+        <tr>
+            <td class="left">Roll Number:</td>
+            <td class="right"><input type="text" id="Roll" name="roll" size="25" maxlength="35" placeholder="Enter your roll number" required /></td>
+        </tr>
+        <tr>
+            <td class="center" colspan="2">
+                <button type="submit">Submit Details</button>
+                <button type="reset">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
