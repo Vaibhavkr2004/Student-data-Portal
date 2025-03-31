@@ -28,8 +28,8 @@ Icons & Styling: FontAwesome, Bootstrap
 
 🚀 How It Works
 
-Students can log in using their name and roll number to view their details.
+✅ Students can log in using their name and roll number to view their details.
 
-Admins have a dedicated panel to add, update, and manage student data.
+✅ Admins have a dedicated panel to add, update, and manage student data.
 
-The data is stored securely in a MySQL database
+✅ The data is stored securely in a MySQL database.
